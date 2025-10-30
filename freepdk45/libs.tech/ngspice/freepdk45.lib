@@ -1,0 +1,66 @@
+* Copyright 2025 R. Jordans
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*     https://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+
+** FreePDK45 model library
+.lib tt
+* SPICE NOM
+* nominal operating corner (average operating corner)
+
+.inc ./tran_models/models_nom/NMOS_VTG.inc
+.inc ./tran_models/models_nom/PMOS_VTG.inc
+
+.inc ./tran_models/models_nom/NMOS_VTL.inc
+.inc ./tran_models/models_nom/PMOS_VTL.inc
+
+.inc ./tran_models/models_nom/NMOS_VTH.inc
+.inc ./tran_models/models_nom/PMOS_VTH.inc
+
+.inc ./tran_models/models_nom/NMOS_THKOX.inc
+.inc ./tran_models/models_nom/PMOS_THKOX.inc
+.endl tt
+           
+* SPICE FF
+.lib ff      
+* fast-fast corner (fastest operating corner)
+
+.inc ./tran_models/models_ff/NMOS_VTG.inc
+.inc ./tran_models/models_ff/PMOS_VTG.inc
+
+.inc ./tran_models/models_ff/NMOS_VTL.inc
+.inc ./tran_models/models_ff/PMOS_VTL.inc
+
+.inc ./tran_models/models_ff/NMOS_VTH.inc
+.inc ./tran_models/models_ff/PMOS_VTH.inc
+
+.inc ./tran_models/models_ff/NMOS_THKOX.inc
+.inc ./tran_models/models_ff/PMOS_THKOX.inc
+.endl ff
+
+
+.lib ss
+ 
+* SPICE SS
+* slow-slow corner (slowest operating corner)
+.inc ./tran_models/models_ss/NMOS_VTG.inc
+.inc ./tran_models/models_ss/PMOS_VTG.inc
+
+.inc ./tran_models/models_ss/NMOS_VTL.inc
+.inc ./tran_models/models_ss/PMOS_VTL.inc
+
+.inc ./tran_models/models_ss/NMOS_VTH.inc
+.inc ./tran_models/models_ss/PMOS_VTH.inc
+
+.inc ./tran_models/models_ss/NMOS_THKOX.inc
+.inc ./tran_models/models_ss/PMOS_THKOX.inc
+.endl
