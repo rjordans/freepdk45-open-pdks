@@ -1,3 +1,5 @@
+## Caution this repository is a work-in-progress and is based on collected bits and pieces from other projects
+
 A copy of the FreePDK 45nm library, adapted to the structure used for the sky130, gf180, and ihp-sg13g2 PDKs
 
 This material has been collected from several sources:
