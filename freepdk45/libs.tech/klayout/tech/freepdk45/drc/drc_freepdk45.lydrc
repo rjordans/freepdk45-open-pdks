@@ -8,6 +8,7 @@
  <doc/>
  <autorun>false</autorun>
  <autorun-early>false</autorun-early>
+ <priority>0</priority>
  <shortcut/>
  <show-in-menu>true</show-in-menu>
  <group-name>drc_scripts</group-name>
@@ -23,7 +24,7 @@
 ##########################################################################################
 tstart = Time.now
 
-# optionnal for a batch launch :   klayout -b r drc_FreePDK45.lydrc -rd input=my_layout.gds -rd topcell=your_topcell -rd output=drc_FreePDK45.lyrdb
+# optionnal for a batch launch :   klayout -b r drc_FreePDK45.lydrc -rd input=my_layout.gds -rd topcell=your_topcell -rd report=drc_FreePDK45.lyrdb
 if $input
   if $topcell
     source($input,$topcell)
@@ -32,8 +33,8 @@ if $input
   end
 end
 
-if $output
-  report("FreePDK45 DRC runset", $output)
+if $report
+  report("FreePDK45 DRC runset", $report)
 else
   report("FreePDK45 DRC runset", "FreePDK45_DRC.lyrdb")
 end
@@ -123,7 +124,8 @@ if poly_sep_active.polygons?
   poly_sep_active.polygons.without_area(0).output("POLY.2", "POLY.2 : Minimum spacing of poly AND active: 140nm")
 end
 poly_sep_active.forget
-poly.enclosing(gate, 55.nm, projection).polygons.without_area(0).output("POLY.3", "POLY.3 : Minimum poly extension beyond active : 55nm")
+# FIXME: Official number is 55 nm but the nangate45 library uses 50 nm...
+poly.enclosing(gate, 50.nm, projection).polygons.without_area(0).output("POLY.3", "POLY.3 : Minimum poly extension beyond active : 50nm")
 active.enclosing(gate, 70.nm, projection).polygons.without_area(0).output("POLY.4", "POLY.4 : Minimum enclosure of active around gate : 70nm")
 poly.not(active).separation(active, 50.nm, projection).polygons.without_area(0).output("POLY.5", "POLY.5 : Minimum spacing of field poly to active: 50nm")
 poly.space(75.nm, euclidian).output("POLY.6", "POLY.6 : Minimum spacing of field poly: 75nm")

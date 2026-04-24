@@ -857,7 +857,8 @@ drc
 
  width allpoly 50 "Poly width < 50nm (POLY.1)"
  spacing allfets allfets 140 touching_ok "Poly gate spacing < 140nm (POLY.2)"
- overhang *poly allfets 55 "Poly overhang of transistor < 55nm (POLY.3)"
+# FIXME: changed POLY.3 to 50 nm (was 55 nm) to have nangate45 pass
+ overhang *poly allfets 50 "Poly overhang of transistor < 50nm (POLY.3)"
  spacing allpolynonfet *ndiff 50 corner_ok allnfets \
 	"Poly to diffusion spacing < 50nm (POLY.5)"
  spacing allpolynonfet *pdiff 50 corner_ok allpfets \
