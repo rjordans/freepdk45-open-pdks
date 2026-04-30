@@ -3,7 +3,7 @@
  <name>FreePDK45</name>
  <description>Free PDK 45nm</description>
  <group/>
- <dbu>0.001</dbu>
+ <dbu>0.0001</dbu>
  <default-grids/>
  <base-path></base-path>
  <original-base-path></original-base-path>
@@ -24,7 +24,7 @@
   <lefdef>
    <read-all-layers>true</read-all-layers>
    <layer-map>layer_map()</layer-map>
-   <dbu>0.001</dbu>
+   <dbu>0.0001</dbu>
    <produce-net-names>true</produce-net-names>
    <net-property-name>#1</net-property-name>
    <produce-inst-names>true</produce-inst-names>
@@ -90,14 +90,14 @@
   </dxf>
   <cif>
    <wire-mode>0</wire-mode>
-   <dbu>0.001</dbu>
+   <dbu>0.0001</dbu>
    <layer-map>layer_map()</layer-map>
    <create-other-layers>true</create-other-layers>
    <keep-layer-names>false</keep-layer-names>
   </cif>
   <mag>
    <lambda>1</lambda>
-   <dbu>0.001</dbu>
+   <dbu>0.0001</dbu>
    <layer-map>layer_map()</layer-map>
    <create-other-layers>true</create-other-layers>
    <keep-layer-names>false</keep-layer-names>
@@ -106,7 +106,7 @@
    </lib-paths>
   </mag>
   <maly>
-   <dbu>0.001</dbu>
+   <dbu>0.0001</dbu>
    <layer-map>layer_map()</layer-map>
    <create-other-layers>true</create-other-layers>
   </maly>

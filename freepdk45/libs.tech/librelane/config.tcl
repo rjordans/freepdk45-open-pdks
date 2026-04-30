@@ -8,6 +8,7 @@ if { ![info exist ::env(STD_CELL_LIBRARY)] } {
 
 # Tools
 set ::env(PRIMARY_GDSII_STREAMOUT_TOOL) "magic"
+#set ::env(PRIMARY_GDSII_STREAMOUT_TOOL) "klayout"
 
 # Placement site for core cells
 # This can be found in the technology lef
