@@ -12,3 +12,19 @@ This material has been collected from several sources:
 ## Known issues
 
  - The DRC rule for POLY.3 was reduced from 55nm to 50nm in this PDK to match with the standard cell implementations in the Nangate45 library.
+ - The default value for the `PL_RESIZE_HOLD_SLACK_MARGIN` of LibreLane does not work well with this PDK and needs to be overridden.  A improved value has been added to the LibreLane configuration file but is not being picked up there.
+ - LibreLane will report XOR errors for every polygon in the design, this seems to be a problem with streaming out through magic.
+
+
+## Example config
+
+The LibreLane example `spm` can be synthesized by adding the following PDK specific options:
+
+```
+pdk::freepdk45:
+  CLOCK_PERIOD: 1
+  FP_CORE_UTIL: 50
+  PL_TARGET_DENSITY: 0.6
+  PL_RESIZER_HOLD_MAX_BUFFER_PCT: 100
+  PL_RESIZER_HOLD_SLACK_MARGIN: 0.05
+```

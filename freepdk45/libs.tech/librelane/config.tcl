@@ -107,48 +107,9 @@ set ::env(PDN_CORE_RING_HOFFSET) 2.0
 # PDN Macro blockages list
 set ::env(MACRO_BLOCKAGES_LAYER) "metal1 metal2 metal3 metal4 metal5 "
 
-# Used for parasitics estimation, IR drop analysis, etc
-set ::env(LAYERS_RC) [dict create]
-
-# Don't set RC values manually, they appear to be inaccurate
-# If not set, OpenROAD seems to pick them up from the tech lef?
-# TODO needs more investigation
-
-#dict set ::env(LAYERS_RC) "*" Metal1 res 0.135e-03
-#dict set ::env(LAYERS_RC) "*" Metal1 cap 3.49E-05
-#dict set ::env(LAYERS_RC) "*" Metal2 res 0.103e-03
-#dict set ::env(LAYERS_RC) "*" Metal2 cap 1.81E-05
-#dict set ::env(LAYERS_RC) "*" Metal3 res 0.103e-03
-#dict set ::env(LAYERS_RC) "*" Metal3 cap 2.14962E-04
-#dict set ::env(LAYERS_RC) "*" Metal4 res 0.103e-03
-#dict set ::env(LAYERS_RC) "*" Metal4 cap 1.48128E-04
-#dict set ::env(LAYERS_RC) "*" Metal5 res 0.103e-03
-#dict set ::env(LAYERS_RC) "*" Metal5 cap 1.54087E-04
-#dict set ::env(LAYERS_RC) "*" TopMetal1 res 0.021e-03
-#dict set ::env(LAYERS_RC) "*" TopMetal1 cap 1.54087E-04
-#dict set ::env(LAYERS_RC) "*" TopMetal2 res 0.0145e-03
-#dict set ::env(LAYERS_RC) "*" TopMetal2 cap 1.54087E-04
-
-#set ::env(VIAS_R) [dict create]
-
-#dict set ::env(VIAS_R) "*" Cont res 2.2E-3
-#dict set ::env(VIAS_R) "*" Via1 res 2.0E-3
-#dict set ::env(VIAS_R) "*" Via2 res 2.0E-3
-#dict set ::env(VIAS_R) "*" Via3 res 2.0E-3
-#dict set ::env(VIAS_R) "*" Via4 res 2.0E-3
-#dict set ::env(VIAS_R) "*" TopVia1 res 0.4E-3
-#dict set ::env(VIAS_R) "*" TopVia2 res 0.22E-3
-
-# Don't set DATA_WIRE_RC_LAYER, CLOCK_WIRE_RC_LAYER
-# Have been renamed to SIGNAL_WIRE_RC_LAYERS, CLOCK_WIRE_RC_LAYERS
-# If unset, RT_MIN_LAYER and RT_MAX_LAYER are used for the calculation
-
-#set ::env(DATA_WIRE_RC_LAYER) "Metal2"
-#set ::env(CLOCK_WIRE_RC_LAYER) "Metal5"
-
 # I/O Layer info
-set ::env(IO_PIN_H_LAYER) "metal3"
-set ::env(IO_PIN_V_LAYER) "metal2"
+set ::env(IO_PIN_H_LAYER) "metal5"
+set ::env(IO_PIN_V_LAYER) "metal6"
 
 # Routing Layer Info
 set ::env(GRT_LAYER_ADJUSTMENTS) "0.00,0.00,0.00,0.00,0.00,0.00,0.00"

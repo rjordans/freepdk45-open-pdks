@@ -71,10 +71,16 @@ set ::env(CELL_PAD_EXCLUDE) "FILLCELL_*"
 # Buffer selection still needs some work
 # There were situations where only the largest buffer was used
 # Ultimately, OpenROAD should select the buffers automatically
-set ::env(CTS_ROOT_BUFFER) CLKBUF_X3
-set ::env(CTS_CLK_BUFFERS) "BUF_X* CLKBUF_*"
+set ::env(CTS_ROOT_BUFFER) CLKBUF_X1
+#set ::env(CTS_CLK_BUFFERS) "BUF_* CLKBUF_*"
 set ::env(CTS_CLK_BUFFERS) "CLKBUF_*"
 
+# Some overrides for the resizer to give better results
+# Without this there were a lot of hold violations even on simple designs
+# TODO these don't seem to get picked up from the PDK config, only the project config
+set ::env(PL_RESIZER_HOLD_SLACK_MARGIN) 0.05
+set ::env(PL_RESIZER_HOLD_MAX_BUFFER_PCT) 100
+set ::env(PL_RESIZER_FIX_HOLD_FIRST) {0}
 
 # FIXME: A bit random ...
 set ::env(MAX_FANOUT_CONSTRAINT) 10
