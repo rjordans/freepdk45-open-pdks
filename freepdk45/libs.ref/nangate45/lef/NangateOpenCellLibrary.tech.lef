@@ -63,8 +63,8 @@ END metal1
 
 LAYER via1
   TYPE CUT ;
-  SPACING 0.08 ;
-  WIDTH 0.07 ;
+  SPACING 0.075 ;
+  WIDTH 0.065 ;
   RESISTANCE 5 ;
 END via1
 
@@ -306,16 +306,16 @@ END OVERLAP
 
 VIA via1_4 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
-    RECT -0.035 -0.07 0.035 0.07 ;
+    RECT -0.035 -0.07 0.030 0.07 ;
   LAYER metal2 ;
     RECT -0.035 -0.07 0.035 0.07 ;
 END via1_4
 
 VIA via1_0 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
     RECT -0.07 -0.07 0.07 0.07 ;
   LAYER metal2 ;
@@ -324,7 +324,7 @@ END via1_0
 
 VIA via1_1 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
     RECT -0.07 -0.07 0.07 0.07 ;
   LAYER metal2 ;
@@ -333,7 +333,7 @@ END via1_1
 
 VIA via1_2 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
     RECT -0.07 -0.07 0.07 0.07 ;
   LAYER metal2 ;
@@ -342,45 +342,45 @@ END via1_2
 
 VIA via1_3 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
-    RECT -0.035 -0.07 0.035 0.07 ;
+    RECT -0.035 -0.07 0.030 0.07 ;
   LAYER metal2 ;
     RECT -0.07 -0.07 0.07 0.07 ;
 END via1_3
 
 VIA via1_5 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
-    RECT -0.035 -0.07 0.035 0.07 ;
+    RECT -0.035 -0.07 0.030 0.07 ;
   LAYER metal2 ;
     RECT -0.07 -0.035 0.07 0.035 ;
 END via1_5
 
 VIA via1_6 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
-    RECT -0.07 -0.035 0.07 0.035 ;
+    RECT -0.07 -0.035 0.07 0.030 ;
   LAYER metal2 ;
     RECT -0.07 -0.07 0.07 0.07 ;
 END via1_6
 
 VIA via1_7 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
-    RECT -0.07 -0.035 0.07 0.035 ;
+    RECT -0.07 -0.035 0.07 0.030 ;
   LAYER metal2 ;
     RECT -0.035 -0.07 0.035 0.07 ;
 END via1_7
 
 VIA via1_8 DEFAULT
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
   LAYER metal1 ;
-    RECT -0.07 -0.035 0.07 0.035 ;
+    RECT -0.07 -0.035 0.07 0.030 ;
   LAYER metal2 ;
     RECT -0.07 -0.035 0.07 0.035 ;
 END via1_8
@@ -553,7 +553,7 @@ VIARULE Via1Array-0 GENERATE
   LAYER metal2 ;
     ENCLOSURE 0.035 0.035 ;
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
     SPACING 0.15 BY 0.15 ;
 END Via1Array-0
 
@@ -563,7 +563,7 @@ VIARULE Via1Array-1 GENERATE
   LAYER metal2 ;
     ENCLOSURE 0 0.035 ;
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
     SPACING 0.15 BY 0.15 ;
 END Via1Array-1
 
@@ -573,7 +573,7 @@ VIARULE Via1Array-2 GENERATE
   LAYER metal2 ;
     ENCLOSURE 0.035 0 ;
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
     SPACING 0.15 BY 0.15 ;
 END Via1Array-2
 
@@ -583,7 +583,7 @@ VIARULE Via1Array-3 GENERATE
   LAYER metal2 ;
     ENCLOSURE 0.035 0 ;
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
     SPACING 0.15 BY 0.15 ;
 END Via1Array-3
 
@@ -593,7 +593,7 @@ VIARULE Via1Array-4 GENERATE
   LAYER metal2 ;
     ENCLOSURE 0 0.035 ;
   LAYER via1 ;
-    RECT -0.035 -0.035 0.035 0.035 ;
+    RECT -0.035 -0.035 0.030 0.030 ;
     SPACING 0.15 BY 0.15 ;
 END Via1Array-4
 
@@ -748,7 +748,7 @@ SPACING
   SAMENET metal8 metal8 0.4 ;
   SAMENET metal9 metal9 0.8 ;
   SAMENET metal10 metal10 0.8 ;
-  SAMENET via1 via1 0.08 ;
+  SAMENET via1 via1 0.075 ;
   SAMENET via2 via2 0.09 ;
   SAMENET via3 via3 0.09 ;
   SAMENET via4 via4 0.16 ;
