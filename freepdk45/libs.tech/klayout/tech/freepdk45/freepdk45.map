@@ -1,0 +1,63 @@
+# Layer map file for FreePDK45
+
+OUTLINE ALL                 235 0
+
+metal1 NET,PIN,LEFPIN,VIA    11 0
+metal1 BLOCKAGE,PIN,LEFPIN   11 1
+NAME   metal1/PIN            11 1
+
+via1   VIA                   12 0
+
+metal2 NET,PIN,LEFPIN,VIA    13 0
+metal2 BLOCKAGE,PIN,LEFPIN  13 1
+NAME   metal2/PIN            13 1
+
+via2   VIA                   14 0
+
+metal3 NET,PIN,LEFPIN,VIA    15 0
+metal3 BLOCKAGE,PIN,LEFPIN   15 1
+NAME   metal3/PIN            15 1
+
+via3   VIA                   16 0
+
+metal4 NET,PIN,LEFPIN,VIA    17 0
+metal4 BLOCKAGE,PIN,LEFPIN   17 1
+NAME   metal4/PIN            17 1
+
+via4   VIA                   18 0
+
+metal5 NET,PIN,LEFPIN,VIA    19 0
+metal5 BLOCKAGE,PIN,LEFPIN   19 1
+NAME   metal5/PIN            19 1
+
+via5   VIA                   20 0
+
+metal6 NET,PIN,LEFPIN,VIA    21 0
+metal6 BLOCKAGE,PIN,LEFPIN   21 1
+NAME   metal6/PIN            21 1
+
+via6   VIA                   22 0
+
+metal7 NET,PIN,LEFPIN,VIA    23 0
+metal7 BLOCKAGE,PIN,LEFPIN   23 1
+NAME   metal7/PIN            23 1
+
+via7   VIA                   24 0
+
+metal8 NET,PIN,LEFPIN,VIA    25 0
+metal8 BLOCKAGE,PIN,LEFPIN   25 1
+NAME   metal8/PIN            25 1
+
+via8   VIA                   26 0
+
+metal9 NET,PIN,LEFPIN,VIA    27 0
+metal9 BLOCKAGE,PIN,LEFPIN   27 1
+NAME   metal9/PIN            27 1
+
+via9   VIA                   28 0
+
+metal10 NET,PIN,LEFPIN,VIA   29 0
+metal10 BLOCKAGE,PIN,LEFPIN  29 1
+NAME   metal10/PIN           29 1
+
+via10   VIA                  30 0
