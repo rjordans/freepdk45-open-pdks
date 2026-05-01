@@ -13,7 +13,7 @@ This material has been collected from several sources:
 
  - The DRC rule for POLY.3 was reduced from 55nm to 50nm in this PDK to match with the standard cell implementations in the Nangate45 library.
  - The default value for the `PL_RESIZE_HOLD_SLACK_MARGIN` of LibreLane does not work well with this PDK and needs to be overridden.  A improved value has been added to the LibreLane configuration file but is not being picked up there.
- - LibreLane will report XOR errors for every polygon in the design, this seems to be a problem with streaming out through magic.
+ - LibreLane will report XOR errors for via1 and metal2 layers, klayout streamout has the via placement misaligned compared to streamout via magic.
 
 
 ## Example config
