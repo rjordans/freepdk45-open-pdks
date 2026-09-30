@@ -9,11 +9,15 @@ This material has been collected from several sources:
  - Teddy-van-Jerry's ngspice models from: https://github.com/Teddy-van-Jerry/ngspice-cmos/tree/master
  - Netgen configuration based on qflow: https://github.com/RTimothyEdwards/qflow/tree/master/tech/gscl45nm
 
+Where available from the original source, a local LICENSE file has been kept.
+
 ## Known issues
 
- - The DRC rule for POLY.3 was reduced from 55nm to 50nm in this PDK to match with the standard cell implementations in the Nangate45 library.
+ - The original FreePDK45 DRC rules were changed in this PDK to match with the standard cell implementations in the Nangate45 library.
+   - POLY.3 was reduced from 55nm to 50nm
+   - VIA.1 was increased from 65nm to 70nm
  - The default value for the `PL_RESIZE_HOLD_SLACK_MARGIN` of LibreLane does not work well with this PDK and needs to be overridden.  A improved value has been added to the LibreLane configuration file but is not being picked up there.
- - LibreLane will report XOR errors for via1 and metal2 layers, klayout streamout has the via placement misaligned compared to streamout via magic.
+ - LibreLane will report 1 XOR error as Klayout does not include the overall boundardy for the design while magic does
  - The memory macros from the fakeram library are missing a proper GDS view.  The provided GDS views have been generated based on the exising LEF files.  Using these files is likely to result in antenna violations during the DRC check.
 
 ## Example config

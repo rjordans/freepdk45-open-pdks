@@ -20,6 +20,10 @@ set ::env(SYNTH_LATCH_MAP) "$::env(PDK_ROOT)/$::env(PDK)/libs.tech/librelane/$::
  # Adder mapping
 set ::env(SYNTH_FA_MAP) "$::env(PDK_ROOT)/$::env(PDK)/libs.tech/librelane/$::env(STD_CELL_LIBRARY)/cells_adders.v"
 
+set ::env(SYNTH_CSA_MAP) "$::env(PDK_ROOT)/$::env(PDK)/libs.tech/librelane/$::env(STD_CELL_LIBRARY)/cells_csa.v"
+set ::env(SYNTH_RCA_MAP) "$::env(PDK_ROOT)/$::env(PDK)/libs.tech/librelane/$::env(STD_CELL_LIBRARY)/cells_rca.v"
+
+
  # Clock gate mapping
 set ::env(SYNTH_CLKGATE_MAP) "$::env(PDK_ROOT)/$::env(PDK)/libs.tech/librelane/$::env(STD_CELL_LIBRARY)/cells_clkgate.v"
 

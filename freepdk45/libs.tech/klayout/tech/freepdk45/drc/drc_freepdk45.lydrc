@@ -174,7 +174,7 @@ metal1_gt1500.edges.with_length(4.um,nil).space(1500.nm,euclidian).output("METAL
 [ metal1_gt90, metal1_gt270, metal1_gt500, metal1_gt900, metal1_gt1500 ].each { |l| l.forget }
 
 #   Via1
-via1.edges.without_length(65.nm).output("VIA1.1", "VIA1.1 : Minimum/Maximum width of via1 : 65nm")
+via1.edges.without_length(70.nm).output("VIA1.1", "VIA1.1 : Minimum/Maximum width of via1 : 70nm")
 via1.space(75.nm, euclidian).output("VIA1.2", "VIA1.2 : Minimum spacing of via1 : 75nm")
 via1.not(metal1).output("VIA1.3", "VIA1.3 : via1 must be inside metal1")
 via1.not(metal2).output("VIA1.4", "VIA1.4 : via1 must be inside metal2")
